@@ -1,0 +1,10 @@
+C:\Users\Julio Almeida\source\repos\BLL\bin\Debug\netstandard2.0\BLL.deps.json
+C:\Users\Julio Almeida\source\repos\BLL\bin\Debug\netstandard2.0\BLL.dll
+C:\Users\Julio Almeida\source\repos\BLL\bin\Debug\netstandard2.0\BLL.pdb
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.csproj.AssemblyReference.cache
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfoInputs.cache
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfo.cs
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.dll
+C:\Users\Julio Almeida\source\repos\BLL\obj\Debug\netstandard2.0\BLL.pdb
