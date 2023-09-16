@@ -14,8 +14,11 @@
     <div class="container">
         <h1>Lista de Clientes</h1>
 
-        <div class="add-button">
-            <a href="NovaPaginaCadastro.aspx" class="btn btn-success">Adicionar Novo Cliente</a>
+        <div class="add-button" style="display: flex; justify-content: end;">
+            <a href="NovaPaginaCadastro.aspx" class="btn btn-success" style="display: flex; align-items: center; padding: 0 10px 0 0; border: none;">
+                <i class="bi bi-plus" style="padding: 5px; font-size: 2rem;"></i>
+                Adicionar Novo Cliente
+            </a>
         </div>
 
         <table class="table table-striped">
@@ -31,24 +34,9 @@
                 </tr>
             </thead>
             <tbody>
-                <asp:Repeater ID="rptClientes" runat="server" OnItemDataBound="FormatoDocumento">
-                    <ItemTemplate>
-                        <tr>
-                            <td><%# Eval("ID") %></td>
-                            <td><%# Eval("Nome") %></td>
-                            <td><%# Eval("Tipo") %></td>
-                            <td><asp:Label ID="lblNumeroDocumento" runat="server" Text='<%# Eval("NumeroDocumento") %>'></asp:Label></td>
-                            <td><%# Eval("DataNascimento") %></td>
-                            <td><%# Eval("DataCadastro") %></td>
-                            <td class="action-buttons">
-                                    <a href="UpdateCliente.aspx?id=<%# Eval("ID") %>" class="btn btn-primary btn-sm">Editar</a>
-                                    <a href="ConfirmacaoExclusao.aspx?id=<%# Eval("ID") %>" class="btn btn-danger btn-sm">Excluir</a>
-                                </td>
-                        </tr>
-                    </ItemTemplate>
-                </asp:Repeater>
+               <asp:Literal ID="ltlClientes" runat="server"></asp:Literal>
             </tbody>
         </table>
-
     </div> 
+    <asp:Literal ID="ltlPaginacao" runat="server"></asp:Literal>
 </asp:Content>

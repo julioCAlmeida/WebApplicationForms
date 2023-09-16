@@ -12,7 +12,7 @@ namespace WebApplicationForms
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			
 		}
 		protected void btnRegistrar_Click(object sender, EventArgs e)
 		{
@@ -24,6 +24,13 @@ namespace WebApplicationForms
 			usuario.Senha = txtSenha.Value;
 
 			var checkUsuario = usuarioDAL.ConsultaPorEmail(usuario.Email);
+
+			if(string.IsNullOrEmpty(usuario.Nome) || string.IsNullOrEmpty(usuario.Email) ||
+					string.IsNullOrEmpty(usuario.Senha))
+			{
+				lblMessage.Text = "Todos os campos devem ser preenchidos.";
+				return;
+			}
 
 			if(checkUsuario != null)
 			{

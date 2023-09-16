@@ -19,19 +19,35 @@ namespace WebApplicationForms
 		}
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            login.Email = txtEmail.Value;
-            login.Senha = txtPassword.Value;
+            string userEmail = txtEmail.Value;
+            string userSenha = txtPassword.Value;
+            bool rememberMe = checkRememberMe.Checked;
 
-            if (loginDal.Autenticar(login))
+            if(ValidadeDasCredenciais(userEmail, userSenha))
 			{
-                Session.Add("UsuarioLogado", login.Email);
+                FormsAuthentication.SetAuthCookie(userEmail, rememberMe);
                 Response.Redirect("~/default.aspx");
             }
             else
-            {
+			{
                 lblErrorMessage.Text = "Credenciais inválidas. Por favor, tente novamente.";
                 lblErrorMessage.Visible = true;
             }
         }
+        private bool ValidadeDasCredenciais(string userEmail, string userPassword)
+		{
+            DAL.LoginDAL loginDAL = new DAL.LoginDAL();
+
+            var user = loginDAL.Autenticar(userEmail, userPassword);
+
+            if(user)
+			{
+                return true;
+			}
+            else
+			{
+                return false;
+			}
+		}
     }
 }

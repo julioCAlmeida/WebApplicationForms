@@ -21,7 +21,7 @@ namespace WebApplicationForms
 		/// Campo gerado automaticamente.
 		/// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button btnLogout;
+		protected global::System.Web.UI.HtmlControls.HtmlAnchor btnLogout;
 
 		/// <summary>
 		/// Controle MainContent.

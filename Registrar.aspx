@@ -22,11 +22,11 @@
             <input type="password" id="txtSenha" runat="server" class="form-control" />
         </div>
         <div class="form-group">
-            <asp:Button ID="btnRegistrar" runat="server" Text="Cadastrar" OnClick="btnRegistrar_Click" class="btn btn-primary" />
-            <asp:Label CssClass="error-message" ID="lblMessage" runat="server" Text=""></asp:Label>
+            <asp:Button ID="btnRegistrar" runat="server" Text="Cadastrar" OnClick="btnRegistrar_Click" class="btn btn-primary" /> 
         </div>
         <div class="form-group">
             <p class="text-start">Já tem cadastro? <a href="Login.aspx">Login</a></p>
         </div>
+         <asp:Label CssClass="error-message" ID="lblMessage" runat="server" Text=""></asp:Label>
     </div>
 </asp:Content> 

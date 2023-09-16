@@ -30,6 +30,12 @@
         <input type="date" ID="txtDataNascimento"  runat="server" class="form-control" />
     </div>
 
-    <asp:Button type="submit" ID="btnAtualizar" runat="server" class="btn btn-primary" OnClick="BtnAtualizar_Click" Text="Atualizar"></asp:Button>
+    <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+        <a href="#" id="btnAtualizar" runat="server" class="btn btn-success" onserverclick="BtnAtualizar_Click" style="text-decoration: none;">
+            <i class="bi bi-arrow-clockwise" style="margin-right: 3px;"></i>
+            Atualizar
+        </a>
+        <a href="Default.aspx" class="btn btn-primary">Cancelar <i class="bi bi-backspace-reverse" style="margin-left: 3px;"></i></a>
+    </div>
     <asp:Label CssClass="error-message" ID="lblMessage" runat="server" Text=""></asp:Label>
 </asp:Content>

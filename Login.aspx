@@ -9,8 +9,11 @@
             <input type="text" id="txtEmail" runat="server" class="form-control" />
         </div>
         <div class="form-group">
-            <label for="txtPassword">Password:</label>
+            <label for="txtPassword">Senha:</label>
             <input type="password" id="txtPassword" runat="server" class="form-control" />
+        </div>
+        <div class="form-group">
+            <asp:CheckBox ID="checkRememberMe" runat="server" Text="Remember Me" />
         </div>
         <div class="form-group">
             <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" class="btn btn-primary" />

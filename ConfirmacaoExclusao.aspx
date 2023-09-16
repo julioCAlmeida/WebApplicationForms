@@ -8,11 +8,14 @@
     </style>
     <h1>Confirmação de Exclusão</h1>
 
-    <p>Deseja realmente excluir o cliente: <span><asp:Literal ID="litNomeCliente" runat="server"></asp:Literal> ?</span></p>
+    <p>Deseja realmente excluir o cliente: <strong><asp:Literal ID="litNomeCliente" runat="server"></asp:Literal></strong> ?</p>
 
-    <div class="form-group">
-        <asp:Button type="submit" class="btn btn-danger" ID="btnExcluir" runat="server" OnClick="btnExcluir_Click" Text="Confirmar"></asp:Button>
-        <a href="Default.aspx" class="btn btn-primary">Cancelar</a>
+    <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+        <a href="#" id="btnExcluir" runat="server" class="btn btn-danger" onserverclick="btnExcluir_Click" style="text-decoration: none;">
+            <i class="bi bi-trash" style="margin-right: 3px;"></i>
+            Confirmar
+        </a>
+        <a href="Default.aspx" class="btn btn-primary">Cancelar<i class="bi bi-backspace-reverse" style="margin-left: 5px;"></i></a>
     </div>
     <asp:Label CssClass="error-message" ID="lblMessage" runat="server" Text=""></asp:Label>
 </asp:Content>

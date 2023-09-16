@@ -123,6 +123,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BDCrud.sql" />
     <Content Include="ConfirmacaoExclusao.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -142,6 +143,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="icons\Add.html" />
+    <Content Include="icons\Add.svg" />
     <Content Include="Login.aspx" />
     <Content Include="NovaPaginaCadastro.aspx" />
     <Content Include="Registrar.aspx" />

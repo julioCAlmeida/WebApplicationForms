@@ -15,12 +15,21 @@ namespace WebApplicationForms
 	{
 
 		/// <summary>
-		/// Controle rptClientes.
+		/// Controle ltlClientes.
 		/// </summary>
 		/// <remarks>
 		/// Campo gerado automaticamente.
 		/// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater rptClientes;
+		protected global::System.Web.UI.WebControls.Literal ltlClientes;
+
+		/// <summary>
+		/// Controle ltlPaginacao.
+		/// </summary>
+		/// <remarks>
+		/// Campo gerado automaticamente.
+		/// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Literal ltlPaginacao;
 	}
 }
